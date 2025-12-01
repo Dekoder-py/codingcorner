@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button88x31 from "../components/Button88x31.tsx";
+import Button88x31 from "../components/Button88x31";
 
 export default function Home() {
   return (
