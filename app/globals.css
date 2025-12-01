@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@theme {
+  --color-macchiato-crust: #181926;
+  --color-macchiato-mantle: #1e2030;
+  --color-macchiato-base: #24273a;
+  --color-macchiato-surface-0: #363a4f;
+  --color-macchiato-surface-1: #494d64;
+  --color-macchiato-peach: #f5a97f;
+  --color-macchiato-blue: #8aadf4;
+  --color-macchiato-lavender: #b7bdf8;
+  --color-macchiato-mauve: #c6a0f6;
+  --color-macchiato-rosewater: #f5e0dc;
+  --color-macchiato-text: #cad3f5;
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  --color-latte-crust: #dce0e8;
+  --color-latte-mantle: #e6e9ef;
+  --color-latte-base: #eff1f5;
+  --color-latte-surface-0: #ccd0da;
+  --color-latte-surface-1: #bcc0cc;
+  --color-latte-peach: #fe640b;
+  --color-latte-blue: #1e66f5;
+  --color-latte-lavender: #7287fd;
+  --color-latte-mauve: #8839ef;
+  --color-latte-rosewater: #dc8a78;
+  --color-latte-text: #4c4f69;
 }
