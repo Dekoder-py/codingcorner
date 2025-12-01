@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button88x31 from "../components/Button88x31.tsx";
 
 export default function Home() {
   return (
@@ -183,133 +184,133 @@ export default function Home() {
         The 88x31 Grid
       </h2>
 
-      {/* <div */}
-      {/*   id="buttons" */}
-      {/*   className=" */}
-      {/*     grid grid-cols-2 sm:grid-cols-3 md:grid-cols-[repeat(auto-fit,minmax(88px,1fr))]  */}
-      {/*     md:max-w-[calc(8*88px)] gap-2 place-items-center */}
-      {/*   " */}
-      {/* > */}
-      {/*   <Button88x31 */}
-      {/*     url="https://codingcorner.dev" */}
-      {/*     imgSrc="/buttons/codingcorner.png" */}
-      {/*     alt="coding corner" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://site.slitrostudio.me" */}
-      {/*     imgSrc="https://site.slitrostudio.me/Slitro2.png" */}
-      {/*     alt="Slitro Studio" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://poy.ooo" */}
-      {/*     imgSrc="/buttons/poyo.png" */}
-      {/*     alt="Poyo" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://errorcodezero.dev/" */}
-      {/*     imgSrc="https://errorcodezero.dev/button.png" */}
-      {/*     alt="ErrorCode0" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://bomberfish.ca" */}
-      {/*     imgSrc="https://bomberfish.ca/button.gif" */}
-      {/*     alt="BomberFish" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://aconlin.com" */}
-      {/*     imgSrc="/buttons/acon.gif" */}
-      {/*     alt="Acon" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="http://gideon.sh/" */}
-      {/*     imgSrc="/buttons/gideon.gif" */}
-      {/*     alt="Gideon" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://www.valen.zip" */}
-      {/*     imgSrc="https://www.valen.zip/button-bw.gif" */}
-      {/*     alt="valen's site's black and white 88x31 button" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://hack.club" */}
-      {/*     imgSrc="/buttons/hackclub.gif" */}
-      {/*     alt="hack club" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://github.com" */}
-      {/*     imgSrc="/buttons/github.gif" */}
-      {/*     alt="github" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://catppuccin.com" */}
-      {/*     imgSrc="/buttons/ctp.webp" */}
-      {/*     alt="catppuccin" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://webmasterwebring.netlify.app" */}
-      {/*     imgSrc="https://file.garden/ZrZSgsrYfQXsO7QH/ww/btn.png" */}
-      {/*     alt="Webmaster Webring" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://apple.com" */}
-      {/*     imgSrc="/buttons/macosmade.gif" */}
-      {/*     alt="made with macOS" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://neovim.io" */}
-      {/*     imgSrc="/buttons/neovim.gif" */}
-      {/*     alt="neovim" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://www.vim.org" */}
-      {/*     imgSrc="/buttons/vim.gif" */}
-      {/*     alt="vim" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://home-assistant.io" */}
-      {/*     imgSrc="/buttons/home-assistant.gif" */}
-      {/*     alt="home assistant" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://apple.com" */}
-      {/*     imgSrc="/buttons/apple.gif" */}
-      {/*     alt="apple" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://notbyai.fyi" */}
-      {/*     imgSrc="/buttons/notbyai.png" */}
-      {/*     alt="not by ai" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://eightyeightthirty.one/#" */}
-      {/*     imgSrc="/buttons/88x31.png" */}
-      {/*     alt="eighty eight thirty one" */}
-      {/*   /> */}
-      {/**/}
-      {/*   <Button88x31 */}
-      {/*     url="https://anybrowser.org" */}
-      {/*     imgSrc="/buttons/detect.gif" */}
-      {/*     alt="viewable on any browser" */}
-      {/*   /> */}
-      {/* </div> */}
+      <div
+        id="buttons"
+        className="
+          grid grid-cols-2 sm:grid-cols-3 md:grid-cols-[repeat(auto-fit,minmax(88px,1fr))] 
+          md:max-w-[calc(8*88px)] gap-2 place-items-center
+        "
+      >
+        <Button88x31
+          url="https://codingcorner.dev"
+          imgSrc="/buttons/codingcorner.png"
+          alt="coding corner"
+        />
+
+        <Button88x31
+          url="https://site.slitrostudio.me"
+          imgSrc="https://site.slitrostudio.me/Slitro2.png"
+          alt="Slitro Studio"
+        />
+
+        <Button88x31
+          url="https://poy.ooo"
+          imgSrc="/buttons/poyo.png"
+          alt="Poyo"
+        />
+
+        <Button88x31
+          url="https://errorcodezero.dev/"
+          imgSrc="https://errorcodezero.dev/button.png"
+          alt="ErrorCode0"
+        />
+
+        <Button88x31
+          url="https://bomberfish.ca"
+          imgSrc="https://bomberfish.ca/button.gif"
+          alt="BomberFish"
+        />
+
+        <Button88x31
+          url="https://aconlin.com"
+          imgSrc="/buttons/acon.gif"
+          alt="Acon"
+        />
+
+        <Button88x31
+          url="http://gideon.sh/"
+          imgSrc="/buttons/gideon.gif"
+          alt="Gideon"
+        />
+
+        <Button88x31
+          url="https://www.valen.zip"
+          imgSrc="https://www.valen.zip/button-bw.gif"
+          alt="valen's site's black and white 88x31 button"
+        />
+
+        <Button88x31
+          url="https://hack.club"
+          imgSrc="/buttons/hackclub.gif"
+          alt="hack club"
+        />
+
+        <Button88x31
+          url="https://github.com"
+          imgSrc="/buttons/github.gif"
+          alt="github"
+        />
+
+        <Button88x31
+          url="https://catppuccin.com"
+          imgSrc="/buttons/ctp.webp"
+          alt="catppuccin"
+        />
+
+        <Button88x31
+          url="https://webmasterwebring.netlify.app"
+          imgSrc="https://file.garden/ZrZSgsrYfQXsO7QH/ww/btn.png"
+          alt="Webmaster Webring"
+        />
+
+        <Button88x31
+          url="https://apple.com"
+          imgSrc="/buttons/macosmade.gif"
+          alt="made with macOS"
+        />
+
+        <Button88x31
+          url="https://neovim.io"
+          imgSrc="/buttons/neovim.gif"
+          alt="neovim"
+        />
+
+        <Button88x31
+          url="https://www.vim.org"
+          imgSrc="/buttons/vim.gif"
+          alt="vim"
+        />
+
+        <Button88x31
+          url="https://home-assistant.io"
+          imgSrc="/buttons/home-assistant.gif"
+          alt="home assistant"
+        />
+
+        <Button88x31
+          url="https://apple.com"
+          imgSrc="/buttons/apple.gif"
+          alt="apple"
+        />
+
+        <Button88x31
+          url="https://notbyai.fyi"
+          imgSrc="/buttons/notbyai.png"
+          alt="not by ai"
+        />
+
+        <Button88x31
+          url="https://eightyeightthirty.one/#"
+          imgSrc="/buttons/88x31.png"
+          alt="eighty eight thirty one"
+        />
+
+        <Button88x31
+          url="https://anybrowser.org"
+          imgSrc="/buttons/detect.gif"
+          alt="viewable on any browser"
+        />
+      </div>
     </div>
   );
 }
