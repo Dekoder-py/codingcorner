@@ -6,27 +6,15 @@
 }
 
 @theme {
-  --color-macchiato-crust: #181926;
-  --color-macchiato-mantle: #1e2030;
-  --color-macchiato-base: #24273a;
-  --color-macchiato-surface-0: #363a4f;
-  --color-macchiato-surface-1: #494d64;
-  --color-macchiato-peach: #f5a97f;
-  --color-macchiato-blue: #8aadf4;
-  --color-macchiato-lavender: #b7bdf8;
-  --color-macchiato-mauve: #c6a0f6;
-  --color-macchiato-rosewater: #f5e0dc;
-  --color-macchiato-text: #cad3f5;
-
-  --color-latte-crust: #dce0e8;
-  --color-latte-mantle: #e6e9ef;
-  --color-latte-base: #eff1f5;
-  --color-latte-surface-0: #ccd0da;
-  --color-latte-surface-1: #bcc0cc;
-  --color-latte-peach: #fe640b;
-  --color-latte-blue: #1e66f5;
-  --color-latte-lavender: #7287fd;
-  --color-latte-mauve: #8839ef;
-  --color-latte-rosewater: #dc8a78;
-  --color-latte-text: #4c4f69;
+  --color-crust: #181926;
+  --color-mantle: #1e2030;
+  --color-base: #24273a;
+  --color-surface-0: #363a4f;
+  --color-surface-1: #494d64;
+  --color-peach: #f5a97f;
+  --color-blue: #8aadf4;
+  --color-lavender: #b7bdf8;
+  --color-mauve: #c6a0f6;
+  --color-rosewater: #f5e0dc;
+  --color-text: #cad3f5;
 }
