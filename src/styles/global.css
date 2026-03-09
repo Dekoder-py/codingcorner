@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --font-sans: 'Dosis', sans-serif;
+  --color-ctp-base: #1e1e2e;
+  --color-ctp-text: #cdd6f4;
+}
+
+@layer base {
+  body {
+    @apply bg-ctp-base text-ctp-text font-sans;
+  }
+
+  h1 {
+    @apply text-2xl font-bold;
+  }
+}
