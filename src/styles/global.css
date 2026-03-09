@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 @theme {
-  --font-sans: 'Dosis', sans-serif;
+  --font-sans: "Dosis", sans-serif;
   --color-ctp-base: #1e1e2e;
   --color-ctp-text: #cdd6f4;
 }
