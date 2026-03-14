@@ -22,4 +22,8 @@
   h2 {
     @apply text-xl;
   }
+
+  header * {
+    @apply flex h-full w-fit items-center justify-center border border-dashed px-8 py-4;
+  }
 }

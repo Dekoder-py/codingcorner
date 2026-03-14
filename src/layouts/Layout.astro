@@ -1,0 +1,36 @@
+---
+import "../styles/global.css";
+
+const { title = "Coding Corner" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>{title}</title>
+  </head>
+
+  <body>
+    <main
+      class="mx-auto flex w-full max-w-4xl flex-col items-center justify-center text-center"
+    >
+      <header class="flex">
+        <a href="/">Home</a>
+        <a href="/projects">Projects</a>
+        <a href="/setup">My Stuff</a>
+        <a href="/guestbook">Guestbook</a>
+      </header>
+      <slot />
+    </main>
+  </body>
+</html>

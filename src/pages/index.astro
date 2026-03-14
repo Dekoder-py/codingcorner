@@ -1,40 +1,22 @@
 ---
-import "../styles/global.css";
-import "../styles/index.css";
+import Layout from "../layouts/Layout.astro";
+
+import '../styles/index.css';
 
 import Webrings from "../components/Webrings.astro";
 import Buttons from "../components/Buttons.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Coding Corner</title>
-  </head>
+<Layout>
+  <h1>Hey there!</h1>
+  <p>
+    I'm Kyle, a 16 year old developer, coder, hack clubber, and student from New
+    Zealand. Welcome to my <span class="text-xs">(coding)</span>corner of the
+    internet!
+  </p>
 
-  <body>
-    <main class="w-full max-w-4xl mx-auto flex flex-col text-center items-center justify-center">
-      <h1>Hey there!</h1>
-      <p>
-        I'm Kyle, a 16 year old developer, coder, hack clubber, and student from
-        New Zealand. Welcome to my <span class="text-xs">(coding)</span>corner
-        of the internet!
-      </p>
-
-      <h2 class="font-bold">Check out some other cool sites!</h2>
-      <Webrings />
-      <br />
-      <Buttons />
-    </main>
-  </body>
-</html>
+  <h2 class="font-bold">Check out some other cool sites!</h2>
+  <Webrings />
+  <br />
+  <Buttons />
+</Layout>
