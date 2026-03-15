@@ -10,7 +10,9 @@ tags:
     - code
 ---
 
-### The ~summer~ winter was ours for the making. Now it's over.
+# Summer of Making 2025
+
+## The ~summer~ winter was ours for the making. Now it's over.
 
 Check out a summary of what I did [here](https://summer.hackclub.com/wrapped/share/CapUCZe).
 
