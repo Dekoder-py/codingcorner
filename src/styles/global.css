@@ -3,7 +3,10 @@
 @theme {
   --font-sans: "Dosis", sans-serif;
   --color-ctp-base: #1e1e2e;
+  --color-ctp-suf0: #313244;
   --color-ctp-text: #cdd6f4;
+  --color-ctp-subtext0: #a6adc8;
+  --color-ctp-mauve: #cba6f7;
 }
 
 @layer base {
