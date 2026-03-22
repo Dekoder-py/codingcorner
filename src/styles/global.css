@@ -7,6 +7,7 @@
   --color-ctp-text: #cdd6f4;
   --color-ctp-subtext0: #a6adc8;
   --color-ctp-mauve: #cba6f7;
+  --color-ctp-blue: #89b4fa;
 }
 
 @layer base {
@@ -22,7 +23,11 @@
     @apply text-xl;
   }
 
+  a {
+    @apply text-ctp-blue;
+  }
+
   header * {
-    @apply flex h-full w-fit items-center justify-center border border-dashed px-8 py-4;
+    @apply text-ctp-text flex h-full w-fit items-center justify-center border border-dashed px-8 py-4;
   }
 }
