@@ -9,20 +9,16 @@ const allPosts = (await getCollection("blog")).sort(
 
 <Layout title="Coding Corner Blog">
   <h1>Blog</h1>
-  <ul class="list-inside list-disc">
+  <ul class="leading-relaxed">
     {
       allPosts.map((post) => (
         <li>
-          <a href={`/posts/${post.id}/`}>
-            {post.data.title}{" "}
-            <>
-              <span class="text-ctp-text"> | </span>
-              <span class="text-ctp-subtext0">
-                {" "}
-                Published on {post.data.pubDate.toLocaleDateString()}
-              </span>
-            </>
-          </a>
+          <a href={`/posts/${post.id}/`}>{post.data.title} </a>
+          <span class="text-ctp-text"> {"\u203a"} </span>
+          <span class="text-ctp-subtext0">
+            {" "}
+            Published on {post.data.pubDate.toLocaleDateString()}
+          </span>
         </li>
       ))
     }
