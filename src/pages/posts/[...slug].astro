@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
+import "../../styles/blog.css";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
@@ -16,5 +17,7 @@ const { Content } = await render(post);
 
 <Layout title={post.data.title + " | Coding Corner Blog"}>
   <img class="p-8" src={post.data.image.url} alt={post.data.image.alt} />
-  <Content />
+  <div id="content">
+    <Content />
+  </div>
 </Layout>

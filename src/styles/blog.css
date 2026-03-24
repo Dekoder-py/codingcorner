@@ -1,0 +1,9 @@
+@reference "./global.css";
+
+#content h1 {
+  @apply mb-4;
+}
+
+#content {
+  @apply text-left leading-relaxed;
+}
