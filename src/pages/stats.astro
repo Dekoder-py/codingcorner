@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <h1>So you want some stats?</h1>
+  <p>The time where I live (New Zealand) is <span id="time"></span></p>
+</Layout>
+
+<script>
+  function updateTime() {
+    const timeText = document.getElementById("time");
+    timeText.textContent = new Date().toLocaleTimeString({
+      timeZone: "Pacific/Auckland",
+    });
+  }
+  updateTime();
+  setInterval(updateTime, 500);
+</script>
