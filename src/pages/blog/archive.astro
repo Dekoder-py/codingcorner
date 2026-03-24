@@ -8,7 +8,12 @@ const allPosts = (await getCollection("archive")).sort(
 ---
 
 <Layout title="Coding Corner Blog Archive">
-  <h1>Blog Archive</h1>
+  <h1 class="mb-4">Blog Archive</h1>
+
+  <p class="font-bold text-md">Note: Posts on this page are archived, so they may not (and probably aren't) up to date or correct.</p>
+
+  <br />
+
   <ul class="leading-relaxed">
     {
       allPosts.map((post) => (
