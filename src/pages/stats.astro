@@ -10,7 +10,7 @@ import Layout from "../layouts/Layout.astro";
 <script>
   function updateTime() {
     const timeText = document.getElementById("time");
-    timeText.textContent = new Date().toLocaleTimeString({
+    timeText.textContent = new Date().toLocaleTimeString("en-NZ", {
       timeZone: "Pacific/Auckland",
     });
   }
