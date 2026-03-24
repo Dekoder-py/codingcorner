@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+const allPosts = (await getCollection("archive")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<Layout title="Coding Corner Blog Archive">
+  <h1>Blog Archive</h1>
+  <ul class="leading-relaxed">
+    {
+      allPosts.map((post) => (
+        <li>
+          <a href={`/posts/${post.id}/`}>{post.data.title} </a>
+          <span class="text-ctp-text"> {"\u203a"} </span>
+          <span class="text-ctp-subtext0">
+            {" "}
+            Published on {post.data.pubDate.toLocaleDateString()}
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
