@@ -13,7 +13,7 @@ const allPosts = (await getCollection("archive")).sort(
     {
       allPosts.map((post) => (
         <li>
-          <a href={`/posts/${post.id}/`}>{post.data.title} </a>
+          <a href={`/posts/archive/${post.id}/`}>{post.data.title} </a>
           <span class="text-ctp-text"> {"\u203a"} </span>
           <span class="text-ctp-subtext0">
             {" "}
