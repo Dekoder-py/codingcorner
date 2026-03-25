@@ -12,6 +12,6 @@ const { title, desc, lang, url } = Astro.props;
       class="text-ctp-text after:absolute after:inset-0">{title}</a
     >
   </h3>
-  <p class="text-ctp-subtext1 relative z-10 text-sm" set:html={desc} />
+  <p class="text-ctp-subtext1 text-sm" set:html={desc} />
   <p class="text-ctp-subtext0 text-md">{lang}</p>
 </div>
