@@ -1,7 +1,37 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ProjectComponent from "../components/ProjectComponent.astro";
 ---
 
 <Layout title="Projects | Coding Corner">
   <h1>Things I have somehow created</h1>
+  <div class="grid gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <ProjectComponent
+      title="Slack Annoyance"
+      desc="As seen in Hack Club's Magazine!"
+      lang="Python"
+      url="https://l.slitro.studio/a"
+    />
+
+    <ProjectComponent
+      title="ReddiTUI"
+      desc="Browse Reddit from the terminal"
+      lang="Rust"
+      url="https://crates.io/crates/redditui"
+    />
+
+    <ProjectComponent
+      title="The Restless Dungeon"
+      desc="Text-based adventure game"
+      lang="Python"
+      url="https://pypi.org/project/restless-dungeon/"
+    />
+
+    <ProjectComponent
+      title="codingcorner.dev"
+      desc="This site!"
+      lang="Astro"
+      url="https://github.com/Dekoder-py/codingcorner"
+    />
+  </div>
 </Layout>
