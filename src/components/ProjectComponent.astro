@@ -2,12 +2,16 @@
 const { title, desc, lang, url } = Astro.props;
 ---
 
-<a href={url} target="_blank">
-  <div
-    class="bg-ctp-suf0 border-ctp-blue text-ctp-text flex h-full w-full flex-col justify-center border p-4 leading-relaxed"
-  >
-    <h3 class="mb-1 text-lg">{title}</h3>
-    <p class="text-ctp-subtext1 text-sm">{desc}</p>
-    <p class="text-ctp-subtext0 text-md">{lang}</p>
-  </div>
-</a>
+<div
+  class="bg-ctp-suf0 border-ctp-blue relative flex h-full w-full flex-col justify-center border p-4 leading-relaxed"
+>
+  <h3 class="mb-1 text-lg">
+    <a
+      href={url}
+      target="_blank"
+      class="text-ctp-text after:absolute after:inset-0">{title}</a
+    >
+  </h3>
+  <p class="text-ctp-subtext1 relative z-10 text-sm" set:html={desc} />
+  <p class="text-ctp-subtext0 text-md">{lang}</p>
+</div>
