@@ -2,7 +2,9 @@
 const { title, desc } = Astro.props;
 ---
 
-<div class="bg-ctp-suf0 w-50 h-20 p-4 flex flex-col justify-center border border-ctp-mauve">
+<div
+  class="bg-ctp-suf0 border-ctp-mauve flex h-20 w-50 flex-col justify-center rounded-xl border p-4"
+>
   <h3>{title}</h3>
   <p class="text-ctp-subtext0">{desc}</p>
 </div>

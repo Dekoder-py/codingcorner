@@ -1,5 +1,5 @@
 @reference "./global.css";
 
 #gear-grid {
-  @apply gap-2 grid sm:grid-cols-2 md:grid-cols-3;
+  @apply gap-4 grid sm:grid-cols-2 md:grid-cols-3;
 }
