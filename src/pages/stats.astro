@@ -5,15 +5,50 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <h1>So you want some stats?</h1>
   <p>The time where I live (New Zealand) is <span id="time"></span></p>
+
+  <br />
+
+  <p id="lastfm"></p>
 </Layout>
 
 <script>
   function updateTime() {
     const timeText = document.getElementById("time");
+    if (timeText == null) return;
+
     timeText.textContent = new Date().toLocaleTimeString("en-NZ", {
       timeZone: "Pacific/Auckland",
     });
   }
   updateTime();
   setInterval(updateTime, 500);
+
+  async function updateSong() {
+    const lastfmText = document.getElementById("lastfm");
+    if (lastfmText == null) return;
+
+    const url = "https://lastfm.codingcorner.dev";
+
+    try {
+      const resp = await fetch(url);
+      if (!resp.ok) {
+        lastfmText.textContent =
+          "Oops! Failed to get lastfm data. If this persists, send me an email or make a github issue please and thanks!";
+        return;
+      }
+
+      const data = await resp.json();
+
+      if (data["status"] === "nowplaying") {
+        lastfmText.textContent = `I'm currently listening to ${data["name"]} by ${data["artist"]}.`;
+      } else {
+        lastfmText.textContent = `I was listening to ${data["name"]} by ${data["artist"]} on ${data["played_at"]}.`;
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  updateSong();
+  setInterval(updateSong, 1000 * 60 * 1.5); // 1000 ms * 60 is 1 minute, * 1.5 is check every 1.5 minutes
 </script>
